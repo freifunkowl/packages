@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'Tal_Residenz_Bad_Salzuflen' hostfile for changing node settings
+
+# Configure customized SSID for this node
+uci set wireless.client_radio0.ssid='tal-residenz.freifunk.net'
+#uci set wireless.client_radio1.ssid='lippe.freifunk.net'
+uci commit

@@ -1,0 +1,8 @@
+############# Freifunk Gluon Node      http://gluon.readthedocs.org/
+#           # based on LEDE            http://lede-project.org/
+# FREIFUNK  # powered by GNU/Linux     http://gnu.org/
+#           # respect PPA guidelines   http://www.picopeer.net/
+#    LIPPE  # building mesh networks   http://freifunk.net/
+#           # support needed?          http://freifunk-lippe.de/
+############# network map             http://karte.freifunk-lippe.de/
+for command line help type 'help' - for status info type 'nodeinfo'

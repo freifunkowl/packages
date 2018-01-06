@@ -1,0 +1,9 @@
+
+#!/bin/sh
+
+# Example hostfile for changing nodes settings
+# Knoten Stadtkirche
+
+wget http://update.freifunk-lippe.de/cronjobs/e8de27fd25b8/wifiswitch -P /usr/lib/micron.d/
+reboot
+

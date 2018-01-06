@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Example hostfile for changing nodes settings
+# Testnode Freifunk Lippe Archer C7 v2
+
+# set hostname
+uci set system.@system[0].hostname=Freifunk-Lippe-Treatment-Test
+uci commit
+
+# change geo or activate/deactivate
+uci set gluon-node-info.@location[0].latitude=52.067135
+uci set gluon-node-info.@location[0].longitude=8.747966
+uci set gluon-node-info.@location[0].share_location=1
+uci commit gluon-node-info
+
+# force branch switch, nice if you want to remove old branches completly
+#uci set autoupdater.settings.branch=stable
+#uci commit

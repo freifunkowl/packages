@@ -1,0 +1,11 @@
+
+#!/bin/sh
+
+# Example hostfile for changing nodes settings
+# Knoten FF-ZumHeimathof12
+
+# change geo or activate/deactivate
+#uci set gluon-node-info.@location[0].latitude=52.067135
+#uci set gluon-node-info.@location[0].longitude=8.747966
+uci set gluon-node-info.@location[0].share_location=0
+uci commit gluon-node-info

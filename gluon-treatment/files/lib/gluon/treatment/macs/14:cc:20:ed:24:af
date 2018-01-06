@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'Dirk' hostfile for changing node settings
+
+# Configure customized SSID for this node
+uci set wireless.client_radio0.ssid='holzhausen24.freifunk.net'
+uci set wireless.client_radio1.ssid='holzhausen5.freifunk.net'
+uci commit
