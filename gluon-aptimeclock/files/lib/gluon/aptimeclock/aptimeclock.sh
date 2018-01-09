@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 #Check if ClientAP shall be limited
 
