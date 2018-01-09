@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 #turn on the bandwidth limiter on meshvpn link by schedule. 
 #
