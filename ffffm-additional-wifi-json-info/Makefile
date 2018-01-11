@@ -4,21 +4,21 @@ PKG_NAME:=ffffm-additional-wifi-json-info
 PKG_VERSION:=3.0
 PKG_RELEASE:=1
 
-include $(TOPDIR)/../package/gluon.mk
-include $(TOPDIR)/../package/cmake.mk
+include $(INCLUDE_DIR)/package.mk
+include $(INCLUDE_DIR)/cmake.mk
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 
 CMAKE_OPTIONS:=-DINSTALL_TESTS=OFF
 
-define Package/$(PKG_NAME)
+define Package/ffffm-additional-wifi-json-info
 	TITLE:=$(PKG_NAME)
 	CATEGORY:=Network
 	MAINTAINER:=t-8ch
 	DEPENDS:=+libnl-tiny +respondd +libuci
 endef
 
-define Package/$(PKG_NAME)/description
+define Package/ffffm-additional-wifi-json-info/description
 	Some additional wifi device information for the ffffm JSON file.
 	This package should work with Gluon v2016.1.x (respondd)  
 endef
@@ -37,4 +37,4 @@ define Package/ffffm-additional-wifi-json-info/install
 	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/gluon/respondd/nexthop.so $(1)/lib/gluon/respondd/
 endef
  
-$(eval $(call BuildPackage,$(PKG_NAME)))
+$(eval $(call BuildPackage,ffffm-additional-wifi-json-info))
