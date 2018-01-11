@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 
 #turn on the bandwidth limiter on meshvpn link by schedule. 
 #
@@ -9,7 +9,7 @@ sleep 37 # this is a hack
 vpnlimitoff="/tmp/vpnlimit.off"
 vpnlimiton="/tmp/vpnlimit.on"
 
-CurrentTime="$(date +%k%M)"
+CurrentTime="$(date +%H%M)"
 CurrentDayOfWeek="$(date +%w)"
 #echo "CurrentTime is $CurrentTime, CurrentDayOfWeek is $CurrentDayOfWeek"
 
