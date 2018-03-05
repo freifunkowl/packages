@@ -1,0 +1,7 @@
+config blockmesh
+        option disabled '1'
+        option maclist '0a:0a:0a:0a:0a:0a 0b:0b:0b:0b:0b:0b 0c:0c:0c:0c:0c:0c'
+        
+config robinson
+        option disabled '1'
+        option friday '5'
