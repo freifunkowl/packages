@@ -1,2 +1,0 @@
-# starting Sunday night at 4h
-0 4 * * 0 /lib/gluon/weeklyreboot/weeklyreboot.sh
