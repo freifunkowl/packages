@@ -1,8 +1,21 @@
-############# Freifunk Gluon Node      http://gluon.readthedocs.org/
-#           # based on LEDE            http://lede-project.org/
-# FREIFUNK  # powered by GNU/Linux     http://gnu.org/
-#           # respect PPA guidelines   http://www.picopeer.net/
-#    LIPPE  # building mesh networks   http://freifunk.net/
-#           # support needed?          http://freifunk-lippe.de/
-############# network map              http://karte.freifunk-lippe.de/
-for command line help type 'help' - for status info type 'nodeinfo'
+#           _  .-')     ('-.                                   
+#          ( \( -O )  _(  OO)                             
+#   ,------.,------. (,------. ,-.   ,------.,--. ,--.   ,--.  ,--,  ,--. ,--.
+#('-| _.---'|   /`. ' |  .---'|  |('-| _.---'|  | |  |   |   \ |  |\ |  .'   /
+#(OO|(_\    |  /  | | |  |    |  |(OO|(_\    |  | | .-') |    \|  | )|      /
+#/  |  '--. |  |_.' |(|  '--. |  |/  |  '--. |  |_|( OO )|  .     |/ |     '
+#\_)|  .--' |  .  '.' |  .--',|  |\_)|  .--' |  | | `-' /|  |\    |  |  .   \
+#  \|  |_)  |  |\  \  |  `---.|  |  \|  |_) ('  '-'(_.-' |  | \   |  |  |\   \
+#   `--'    `--' '--' `------'`--    `--'     `-----'    `--'  `--'  `--' '--'
+#                     _ (`-.    _ (`-.    ('-.                 
+#                    ( (OO  )  ( (OO  ) _(  OO)   Freifunk Gluon Node
+# ,--.      ,-.-')  _.`     \ _.`     \(,------.  http://gluon.readthedocs.org/
+# |  |.-')  |  |OO)(__...--''(__...--'' |  .---'  based on OpenWRT
+# |  | OO ) |  |  \ |  /  | | |  /  | | |  |      http://openwrt.org/
+# |  |`-' | |  |(_/ |  |_.' | |  |_.' |(|  '--.   powered by GNU/Linux
+#(|  '---.',|  |_.' |  .___.' |  .___.' |  .--'   http://gnu.org/
+# |      |(_|  |    |  |      |  |      |  `---.  respect PPA guidelines
+# `------'  `--'    `--'      `--'      `------'  http://www.picopeer.net/
+#
+# Support https://freifunk-lippe.de Network Map https://karte.freifunk-lippe.de
+
