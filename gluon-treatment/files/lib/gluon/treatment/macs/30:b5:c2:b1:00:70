@@ -1,5 +1,0 @@
-#!/bin/sh
-# Example hostfile for changing nodes settings neuland.rocks change geo 
-# or activate/deactivate
-uci set gluon-node-info.@location[0].share_location=0 uci commit 
-gluon-node-info
