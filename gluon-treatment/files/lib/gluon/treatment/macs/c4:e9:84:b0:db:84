@@ -1,9 +1,0 @@
-#!/bin/sh
-
-# Node 'TBV-Pideritstrasse' hostfile for changing node settings
-
-# Repair domain configuration for this node
- uci set gluon.core.domain='d3lip'
- uci commit
- wget http://update.freifunk-lippe.de/treatment/gluon-fflip-1.0.3-20180927-tp-link-cpe210-v1.0-sysupgrade.bin -O /tmp/gluon-fflip-1.0.3-20180927-tp-link-cpe210-v1.0-sysupgrade.bin
- sysupgrade /tmp/gluon-fflip-1.0.3-20180927-tp-link-cpe210-v1.0-sysupgrade.bin
