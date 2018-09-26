@@ -1,7 +1,0 @@
-#!/bin/sh
-
-# Node 'VERVE-KAFFEE' hostfile for changing node settings
-
-# Configure customized SSH access key for this node
-wget http://update.freifunk-lippe.de/cronjobs/uhlstonekey/authorized_keys -P /etc/dropbear/
-reboot
