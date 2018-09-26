@@ -1,8 +1,0 @@
-
-#!/bin/sh
-
-# Example hostfile for changing nodes settings
-# Knoten Auf dem Brinke 27 - CPE210
-
-wget http://update.freifunk-lippe.de/cronjobs/ec086b8a883a/wifitoggle -P /usr/lib/micron.d/
-reboot
