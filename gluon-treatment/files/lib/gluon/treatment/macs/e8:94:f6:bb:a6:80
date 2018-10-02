@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Node 'St.Nicolai_Gemeindehaus' hostfile for changing node settings
+
+# Repair domain configuration for this node
+uci set gluon.core.domain='d3lip'
+uci commit
+wget http://update.freifunk-lippe.de/treatment/wdr3600v1.bin -O /tmp/upg.bin
+sysupgrade /tmp/upg.bin 
