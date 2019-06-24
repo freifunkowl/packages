@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'Vera Veggie AP2'
+# Block nodes 'HALEO RP','Landgericht DT - Paulinenstraße'
+
+# set blockmesh
+uci set rsk.@blockmesh[0].maclist='BA:81:1B:E9:B4:29 BE:F3:D9:A4:2F:49'
+uci commit

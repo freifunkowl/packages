@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'Malort Detmold'
+# Block nodes 'Standesamt Detmold','HALEO 1.OG-L'
+
+# set blockmesh
+uci set rsk.@blockmesh[0].maclist='7E:47:60:5D:E5:5D BA:C3:E6:5A:CE:D9 BA:C3:E6:5A:CE:DD'
+uci commit

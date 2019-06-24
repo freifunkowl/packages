@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'Buchhaus am Markt'
+# Block nodes '..','..','Bürgerstiftung Detmold'
+
+# set blockmesh
+uci set rsk.@blockmesh[0].maclist='F2:2C:9B:BC:F4:59 BA:AC:D7:86:FC:31 AA:9E:33:55:F8:F1 4A:5A:B0:C3:B3:31'
+uci commit

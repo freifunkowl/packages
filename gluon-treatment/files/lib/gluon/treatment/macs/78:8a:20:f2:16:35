@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'HALEO RP'
+# Block nodes 'HALEO 1.OG-L','HALEO 1.OG-R','HALEO 2.OG-L','HALEO 2.OG-R','Vera Veggie AP2','Skyline Bowling RP'
+
+# set blockmesh
+uci set rsk.@blockmesh[0].maclist='BA:C3:E6:5A:CE:D9 DA:94:29:45:9B:81 96:91:81:AB:DD:F1 A2:2D:07:66:6B:29 7E:47:60:5D:E5:59 7E:47:60:5D:E5:59 C2:7E:5A:DF:30:39'
+uci commit

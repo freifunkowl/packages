@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'Skyline Bowling RP'
+# Block nodes '..','HALEO RP'
+
+# set blockmesh
+uci set rsk.@blockmesh[0].maclist='E6:DF:C8:58:94:31 BA:81:1B:E9:B4:29'
+uci commit

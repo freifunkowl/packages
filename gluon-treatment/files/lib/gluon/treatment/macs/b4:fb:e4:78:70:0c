@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Node 'LemgoDigital (Querbeet)'
+# Install FFLIP RSA Key for Lemgo
+
+# install key
+wget http://download.freifunk-lippe.de/fflipkeys/lemgo/authorized_keys -P /etc/dropbear/authorized_keys

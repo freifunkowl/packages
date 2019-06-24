@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'SPK PB/DT Filiale Detmold Markt'
+# Block nodes '..','..','Bürgerstiftung Detmold'
+
+# set blockmesh
+uci set rsk.@blockmesh[0].maclist='32:39:F2:86:88:41 D2:7B:AD:2A:5F:71 4A:5A:B0:C3:B3:31'
+uci commit

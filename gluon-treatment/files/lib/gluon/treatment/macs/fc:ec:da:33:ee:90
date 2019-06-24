@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'HALEO 1.OG-L'
+# Block nodes 'HALEO RP','Opticus','Malort Detmold'
+
+# set blockmesh
+uci set rsk.@blockmesh[0].maclist='BA:81:1B:E9:B4:29 E6:DF:C8:58:94:31 72:A7:2A:82:3B:09'
+uci commit

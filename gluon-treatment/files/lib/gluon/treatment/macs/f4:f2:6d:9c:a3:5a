@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'Burrico RP'
+# Block nodes 'Landgericht DT - Paulinenstraße'
+
+# set blockmesh
+uci set rsk.@blockmesh[0].maclist='BE:F3:D9:A4:2F:49'
+uci commit

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Node 'Landgericht DT - Paulinenstraße'
+# Block nodes 'Vera Veggie AP2','Burrico RP','Bürgerstiftung DT - Paulinenstraße'
+
+# set blockmesh
+uci set rsk.@blockmesh[0].maclist='7E:47:60:5D:E5:59 06:20:9E:29:97:F9 4A:5A:B0:C3:B3:31'
+uci commit
