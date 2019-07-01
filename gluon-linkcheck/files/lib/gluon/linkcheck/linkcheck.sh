@@ -3,7 +3,7 @@ valuecheck ()
 {
   logstring=$logstring" "$linkname"."$check":"$wert
   if [ ! -f /tmp/linkcheck.$linkname.$check.inhood ] ; then
-    if [ "$wert" -gt 1 ] ; then #minimum 2 neighbors
+    if [ "$wert" -gt 0 ] ; then #minimum 1 neighbour
      echo 1>/tmp/linkcheck.$linkname.$check.inhood
     fi
   else
