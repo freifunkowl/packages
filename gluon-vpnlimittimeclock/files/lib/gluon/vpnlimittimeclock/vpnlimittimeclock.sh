@@ -33,7 +33,9 @@ if [ $? -eq 0 ]; then
          fi
        else
         if [ $(uci get simple-tc.mesh_vpn.enabled) -eq 1 ] ; then
-          uci set simple-tc.mesh_vpn.enabled=0   
+          uci set simple-tc.mesh_vpn.enabled=0
+          uci set tunneldigger.mesh_vpn.limit_bw_down='999999'
+          uci commit tunneldigger
           logger -s -t "gluon-vpnlimittimeclock" -p 5 "VPN-bandwidthlimit deaktiviert"
           /etc/init.d/network restart
           rm $vpnlimiton &>/dev/null
