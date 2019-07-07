@@ -1,9 +1,12 @@
 #/bin/sh
 
-START=$(date +%s);  wget -O /dev/null http://ovh.net/files/100Mio.dat; END=$(date +%s); echo $((END-START))| awk '{prin$echo "^^^ -> Wert in MBit/s"
+START=$(date +%s);  wget -O /dev/null http://download.freifunk-lippe.de/speedtest/100MB.bin; END=$(date +%s); echo $((END-START))| awk '{print int(100/$1)}';
+echo "^^^ -> Wert in MBit/s"
 echo
-START=$(date +%s);  wget -O /dev/null http://ovh.net/files/1Gio.dat; END=$(date +%s); echo $((END-START))| awk '{print $echo "^^^ -> Wert in MBit/s"
+START=$(date +%s);  wget -O /dev/null http://download.freifunk-lippe.de/speedtest/1GB.bin; END=$(date +%s); echo $((END-START))| awk '{print int(1000/$1)}';
+echo "^^^ -> Wert in MBit/s"
 echo
-START=$(date +%s);  wget -O /dev/null http://ovh.net/files/10Gio.dat; END=$(date +%s); echo $((END-START))| awk '{print$echo "^^^ -> Wert in MBit/a"
+START=$(date +%s);  wget -O /dev/null http://download.freifunk-lippe.de/speedtest/10GB.bin; END=$(date +%s); echo $((END-START))| awk '{print int(10000/$1)}';
+echo "^^^ -> Wert in MBit/s"
 echo
 echo "Script beendet."
