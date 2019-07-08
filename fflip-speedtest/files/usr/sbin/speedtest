@@ -1,9 +1,19 @@
 #/bin/sh
 
+echo "IPv6 100 MB Testdatei"
 START=$(date +%s);  wget -O /dev/null http://download.freifunk-lippe.de/speedtest/100MB.bin; END=$(date +%s); echo $((END-START))| awk '{print int(100/$1)}';
 echo "^^^ -> Wert in MBit/s"
 echo
+echo "IPv4 100 MB Testdatei"
+START=$(date +%s);  wget -4 -O /dev/null http://download.freifunk-lippe.de/speedtest/100MB.bin; END=$(date +%s); echo $((END-START))| awk '{print int(100/$1)}';
+echo "^^^ -> Wert in MBit/s"
+echo
+echo "IPv6 1000 MB Testdatei"
 START=$(date +%s);  wget -O /dev/null http://download.freifunk-lippe.de/speedtest/1GB.bin; END=$(date +%s); echo $((END-START))| awk '{print int(1000/$1)}';
+echo "^^^ -> Wert in MBit/s"
+echo
+echo "IPv4 1000 MB Testdatei"
+START=$(date +%s);  wget -4 -O /dev/null http://download.freifunk-lippe.de/speedtest/1GB.bin; END=$(date +%s); echo $((END-START))| awk '{print int(1000/$1)}';
 echo "^^^ -> Wert in MBit/s"
 echo
 echo "Script beendet."
