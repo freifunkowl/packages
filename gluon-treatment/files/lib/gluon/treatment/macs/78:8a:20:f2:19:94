@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Node 'Zugvogel'
+# Block clients due to FFLIP fair use policy
+
+# set macfilter
+uci set wireless.client_radio0.macfilter='deny'
+uci set wireless.client_radio0.maclist='14:1f:78:26:a2:fb 5c:f9:38:9b:b6:e6'
+uci set wireless.client_radio1.macfilter='deny'
+uci set wireless.client_radio1.maclist='14:1f:78:26:a2:fb 5c:f9:38:9b:b6:e6'
+uci commit
+wifi

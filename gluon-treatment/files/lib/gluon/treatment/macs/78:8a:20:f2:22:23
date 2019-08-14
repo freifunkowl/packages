@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Node 'Marino'
+# Block clients due to FFLIP fair use policy
+
+# set macfilter
+uci set wireless.client_radio0.macfilter='deny'
+uci set wireless.client_radio0.maclist='84:a4:66:c2:8f:47 58:82:a8:55:1e:22 04:d6:aa:14:b3:6c c8:c2:fa:0f:0b:e4 6c:2f:2c:9b:ae:0c'
+uci set wireless.client_radio1.macfilter='deny'
+uci set wireless.client_radio1.maclist='84:a4:66:c2:8f:47 58:82:a8:55:1e:22 04:d6:aa:14:b3:6c c8:c2:fa:0f:0b:e4 6c:2f:2c:9b:ae:0c'
+uci commit
+wifi

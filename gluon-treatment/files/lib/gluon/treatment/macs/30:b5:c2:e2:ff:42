@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Node 'Salatbar-1'
+# Block clients due to FFLIP fair use policy
+
+# set macfilter
+uci set wireless.client_radio0.macfilter='deny'
+uci set wireless.client_radio0.maclist='d4:40:f0:d4:e9:57 08:e6:89:13:35:ea b4:e6:2a:a5:e7:cf e0:c7:67:3d:78:86 00:24:d7:9b:0d:20 e4:d5:3d:98:17:97'
+uci commit
+wifi
