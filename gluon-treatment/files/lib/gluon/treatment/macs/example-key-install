@@ -1,10 +1,14 @@
 #!/bin/sh
 
 # Node 'Node Name'
-# Install FFLIP RSA Key
+# Install RSA Key
 
-# install key
-echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAhmSVf09nspZ5wmFaMHK5voM907WX76ipwsk7MW3hR20r28EatRvPeFbOKMz4hAKQtYJsX0wzAUN+EGHWgNIQkGA0fhottMcZOWy/9xwRrkwP9gT6mQ3eIwCFS/Cc7m6BqBOZYkeZC1p90/ZW7FTxVxzOHAV4cCXmpQS96bh3EVUoVCes3OQYHFOXoePE3euWFpG2LOR2BSH+sdAh307TzHNSOuZBfiklMyajJK1g7td7UVtmZ0IZYOgz1AUYzDvqmmlktfEJ/lbD6PXpl/dJLG95MovTQVm5XTA5YTn3Kg+C+tBMRnt5VutwpxJ6bb1dxs8R6w4EOGFM9AMWJ6cVlQ==
+# install FFLIP RSA key
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAoLa9+XqAM6q2/uU6A510M+QiaFbF8UYY4B+jxFjHQS9SVyWEPjiC0/0aHPhUx2PtlsqeEchxiPk/h77dixQUVZ3jrAaCOvl6i1hCCKZPPI6NMIzuHX5M+SqJMkVTY02QCzqU8ZoZghndVTViO3u2plXGg12jtV2Mqyu2GCDBOji4X0TCsmDo3ridxq5CiqNmpN0DlxGA2wkrlyB2V8akwKpwS7y4FZC81ILTi/FFQgtkYBElOciIkQ2CLVzvVb1rLqNkqoR8EzCCZ0TfrGdHzZz+KTwyW0azrf7UWiiHd++kPdEr5tL6KjctnmpdlUJ8unD2ZNHd7OddahTB/a6eSQ==
 " >> /etc/dropbear/authorized_keys
+
+# install Kreis Lippe RSA key
+echo "" >> /etc/dropbear/authorized_keys
+
 /etc/init.d/dropbear restart
 
