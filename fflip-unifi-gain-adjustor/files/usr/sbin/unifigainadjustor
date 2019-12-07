@@ -4,11 +4,14 @@ grep 'Ubiquiti UniFi-AC-LITE$' /tmp/sysinfo/model && uci set wireless.radio0.txp
 grep 'Ubiquiti UniFi-AC-MESH$' /tmp/sysinfo/model && uci set wireless.radio0.txpower='17' && uci set wireless.radio1.txpower='14' && uci commit && wifi
 grep 'Ubiquiti UniFi-AC-MESH-PRO$' /tmp/sysinfo/model && uci set wireless.radio0.txpower='12' && uci set wireless.radio1.txpower='12' && uci commit && wifi
 
-echo 'Antenna offset values successfully set.' >> /tmp/unifigainadjustor.txt
-uci get wireless.radio0.txpower >> /tmp/unifigainadjustor.txt
-uci get wireless.radio1.txpower >> /tmp/unifigainadjustor.txt
-
-rm /usr/sbin/unifigainadjustor
+# try opkg remove 
+opkg remove fflip-unifi-gain-adjustor
+# delete cronjob manually (in case opkg didn't work)
 rm /usr/lib/micron.d/unifigainadjustor
+# delete script and mac treatments
+rm -rf /usr/sbin/unifigainadjustor
+reboot
+
+
 
 
