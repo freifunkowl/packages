@@ -1,0 +1,7 @@
+
+# Example hostfile for changing nodes settings
+# Node FF-MO-Glaser
+
+# force branch switch, nice if you want to remove old branches completly
+uci set autoupdater.settings.branch=stable
+uci commit
