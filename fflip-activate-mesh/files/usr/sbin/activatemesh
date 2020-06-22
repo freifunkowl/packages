@@ -1,0 +1,16 @@
+#/bin/sh
+
+uci set wireless.mesh_radio0.disabled=0 && uci commit wireless && wifi
+uci set wireless.mesh_radio1.disabled=0 && uci commit wireless && wifi
+
+# try opkg remove 
+opkg remove fflip-activate-mesh
+# delete cronjob manually (in case opkg didn't work)
+rm /usr/lib/micron.d/activatemesh
+# delete script and mac treatments
+rm -rf /usr/sbin/activatemesh
+reboot
+
+
+
+
