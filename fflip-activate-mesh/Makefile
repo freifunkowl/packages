@@ -10,11 +10,11 @@ include $(INCLUDE_DIR)/package.mk
 define Package/fflip-activate-mesh
   SECTION:=gluon
   CATEGORY:=Gluon
-  TITLE:=Activates mesh on all devices
+  TITLE:=Activates mesh radio
 endef
 
 define Package/fflip-activate-mesh/description
-	Activates mesh on all devices
+	Activates mesh radio
 endef
 
 define Build/Prepare
